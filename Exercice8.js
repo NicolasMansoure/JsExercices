@@ -21,4 +21,4 @@ let sapin = (nombre, compteur, etoiles) => {
         }
     }
 }
-sapin(nombre,compteur,etoiles);
+sapin(nombre, compteur, etoiles);

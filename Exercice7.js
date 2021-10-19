@@ -9,7 +9,7 @@ let read = require("readline-sync");
 let nombre = read.questionFloat("Veuillez saisir un nombre positive: ");
 let somme = 0;
 
-for (let i = 0; i < nombre+1; i++){ // "nombre+1" j'ai pas trouver plus propre car il manquait un tour de boucle.
+for (let i = 0; i < nombre + 1; i++) { // "nombre+1" j'ai pas trouver plus propre car il manquait un tour de boucle.
     somme = somme + i
 }
 

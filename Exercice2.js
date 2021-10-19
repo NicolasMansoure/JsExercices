@@ -9,4 +9,4 @@ let addition = (num1, num2) => {
     return `La somme de ${num1} et de ${num2} est de: ${somme}`
 }
 
-console.log(addition(num1,num2));
+console.log(addition(num1, num2));

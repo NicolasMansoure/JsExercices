@@ -22,12 +22,12 @@ let sapin = (nombre, compteur, etoiles) => {
             etoiles += "*";
             console.log(etoiles);
             compteur++
-        }   
+        }
     }
-    for (let j=compteur; compteur>0; j--){
+    for (let j = compteur; compteur > 0; j--) {
         etoiles = etoiles.substring(1);
         console.log(etoiles);
         compteur--
     }
 }
-sapin(nombre,compteur,etoiles);
+sapin(nombre, compteur, etoiles);

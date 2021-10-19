@@ -9,7 +9,7 @@ let i = 0;
 while (i < 2) {
     i++
     let temp = read.questionFloat("Veuillez saisir un nombre: ");
-    if (nombre < temp){
+    if (nombre < temp) {
         nombre = temp;
     }
 }

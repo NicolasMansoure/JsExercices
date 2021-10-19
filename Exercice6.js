@@ -35,5 +35,5 @@ let calculatrice = (operande1, operateur, operande2) => {
     }
 }
 
-calculatrice(operande1,operateur,operande2);
+calculatrice(operande1, operateur, operande2);
 

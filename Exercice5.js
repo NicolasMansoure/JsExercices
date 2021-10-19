@@ -13,27 +13,27 @@ let listeEleve = [0, 17, 9, 11, 19];
 let commentaireNote = (listeEleve) => {
     let i = 0;
     while (i < listeEleve.length) {
-        if (listeEleve[i] >= 0 && listeEleve[i] <= 4){
+        if (listeEleve[i] >= 0 && listeEleve[i] <= 4) {
             console.log(`la note est de: ${listeEleve[i]}. Catastrophique, il faut tout revoir`)
         }
-        else if (listeEleve[i] >= 5 && listeEleve[i] <= 10 ){
+        else if (listeEleve[i] >= 5 && listeEleve[i] <= 10) {
             console.log(`la note est de: ${listeEleve[i]}. Insuffisant`)
         }
-        else if (listeEleve[i] >= 11 && listeEleve[i] <= 14 ){
+        else if (listeEleve[i] >= 11 && listeEleve[i] <= 14) {
             console.log(`la note est de: ${listeEleve[i]}. Peut mieux faire`)
         }
-        else if (listeEleve[i] >= 15 && listeEleve[i] <= 17 ){
+        else if (listeEleve[i] >= 15 && listeEleve[i] <= 17) {
             console.log(`la note est de: ${listeEleve[i]}. Bien`)
         }
-        else if (listeEleve[i] >= 18 && listeEleve[i] <= 20 ){
+        else if (listeEleve[i] >= 18 && listeEleve[i] <= 20) {
             console.log(`la note est de: ${listeEleve[i]}. Excellent, bon travail`)
         }
-        
+
         else {
             console.log(`la note est de: ${listeEleve[i]}`)
         }
-        
-        i++ 
+
+        i++
     }
 }
 
