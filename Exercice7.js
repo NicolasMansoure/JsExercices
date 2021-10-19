@@ -14,3 +14,24 @@ for (let i = 0; i < nombre+1; i++){ // "nombre+1" j'ai pas trouver plus propre c
 }
 
 console.log(`La somme de tous les nombre de ${nombre} est de ${somme}.`)
+
+
+
+// S O L U T I O N
+//_______________________________________________________________ 
+// let read = require("readline-sync");
+// let nombre = read.questionFloat("Saisir un nombre N : " );
+// console.log(`Vous avez saisi : ${nombre}`);
+// let somme = 0;
+// let i = 1;
+// let result ="";
+// while (i <= nombre) {
+//     somme += i;
+//     if (i === nombre) {
+//         result += i + " = ";
+//     } else {
+//         result += i + "+";
+//     }
+//     i++;
+// }
+// console.log(`${result} ${somme}`);
