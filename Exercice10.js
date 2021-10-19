@@ -1,24 +1,44 @@
 // Adaptez l'exercice 9 pour que la pyramide soit dans le bon sens (^)
 // Resultat attendu:
 // (ex : nombre = 5)
-// *            
-// ***
-// *****
-// *******
+//     *            
+//    ***
+//   *****
+//  *******
 // *********
+//________________________________________________________________________
+// nombre = 5 -> etages
+// __Boucle nombre étage
+// __let espaces = ""
+// __Boucle qui définit le nombre d'espaces
+// __let etoiles = ""
+// __let etoiles2 = ""
+// __Boucle qui définit le nombre d'étoiles
+// ____un tour où je mets pas de "*" dans etoiles2
+// __console.log(espaces + etoiles)
+//________________________________________________________________________
 
 let read = require("readline-sync");
-let nombre = read.questionFloat("Veuillez saisir un nombre positive: ");
-let compteur = 1;
-let etoiles = "";
 
-let sapin = (nombre, compteur, etoiles) => {
-    for (let i = 0; i < nombre; i++) {
-        if (compteur <= nombre) {
-            etoiles += "*";
-            console.log(etoiles);
-            compteur++
+let pyramide = () => {
+    let nombreEtage = read.questionFloat("Veuillez saisir un nombre positive: ")
+
+    for (let i = 0; i < nombreEtage; i++) { // boucle pour le nombre d'etages
+        let espaces = "";
+        let etoiles = "*";
+        let etoiles2 = "*";
+
+        for (let j = 0; j < nombreEtage - i; j++) { // boucle pour le nombre d'espaces
+            espaces += " ";
         }
+        for (let k = 0; k < i; k++) { // boucle pour les etoiles
+            etoiles += "*"
+            if (k !== 0) {
+                etoiles2 += "*";
+            }
+        }
+        console.log(espaces + etoiles + etoiles2);
     }
 }
-sapin(nombre, compteur, etoiles);
+
+pyramide();
