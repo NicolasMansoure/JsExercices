@@ -22,3 +22,13 @@ let sapin = (nombre, compteur, etoiles) => {
     }
 }
 sapin(nombre, compteur, etoiles);
+
+
+// let read = require("readline-sync");
+// let nombre = read.questionInt("Entrez un nombre : ")
+// let etoiles = "";
+
+// for(let index = 0; index < nombre; index++) {
+//     etoiles += "*"
+//     console.log(etoiles)
+// }
