@@ -6,3 +6,13 @@
 // La température la plus proche de 0°C est -5°C.
 
 
+const listeTemp = [12, 25, 5, 7, 6, -12];
+let temporaire = listeTemp[0];
+
+listeTemp.forEach((temperature) => {
+    if ((0 - temperature) > (0 - temporaire)) {
+        temporaire = temperature;
+    }
+});
+
+console.log(temporaire);
