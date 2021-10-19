@@ -10,14 +10,26 @@
 // Pièce 2€ : 1
 // Pièce 0,50€ : 1
 // Pièce 0,02€ : 1
+// Pièce 0,01€ : 0
 
 let read = require("readline-sync");
 
-let caisse = () => {
-    let nombre = read.questionFloat("Veuillez saisir un nombre decimal: ")
-    let 
+let numbreAgent = read.questionFloat("Entrez un nombre : ");
 
+const listeBillets = [500, 200, 20, 10, 5, 2, 1, 0.5, 0.02, 0.01];
 
+let distributeurBillet = () => {
+    listeBillets.forEach((billet) => { 
+        if ((numbreAgent%billet) >= 0 ) {
+            let nombreDebillets = Math.trunc(numbreAgent/billet);
+            if (numbreAgent > 5 ) {
+                console.log(`Billets de ${billet}€ : ${nombreDebillets}`);
+            } else {
+                console.log(`Pièces de ${billet}€ : ${nombreDebillets}`);
+            }
+            numbreAgent = numbreAgent - (nombreDebillets*billet);
+        }
+    });
 }
 
-caisse();
+distributeurBillet(numbreAgent);
