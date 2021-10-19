@@ -21,18 +21,17 @@
 let read = require("readline-sync");
 
 let pyramide = () => {
-    let nombreEtage = read.questionFloat("Veuillez saisir un nombre positive: ")
+    let nombre = read.questionFloat("Veuillez saisir un nombre positive: ")
 
-    for (let i = 0; i < nombreEtage; i++) { // boucle pour le nombre d'etages
+    for (let i = 1; i <= nombre; i++) { // boucle etages
         let espaces = "";
-        let etoiles = "*";
-        let etoiles2 = "*";
-
-        for (let j = 0; j < nombreEtage - i; j++) { // boucle pour le nombre d'espaces
+        let etoiles = "";
+        let etoiles2 = "";
+        for (let j = 0; j < nombre - i; j++) { // boucle espaces
             espaces += " ";
         }
-        for (let k = 0; k < i; k++) { // boucle pour les etoiles
-            etoiles += "*"
+        for (let k = 0; k < i; k++) { // boucle etoiles
+            etoiles += "*";
             if (k !== 0) {
                 etoiles2 += "*";
             }
